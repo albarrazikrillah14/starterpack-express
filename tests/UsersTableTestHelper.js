@@ -10,4 +10,15 @@ export const UsersTableTestHelper = {
 
     return result;
   },
+  async postUser({ id = 'user-123', username = 'medomeckz', password = 'secret', fullname = 'Albarra Zikrillah' }) {
+    await db.models.User.create({
+      id,
+      username,
+      password,
+      fullname
+    });
+  },
+  async cleanTable() {
+    await db.models.User.truncate();
+  }
 }

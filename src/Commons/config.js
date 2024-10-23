@@ -1,8 +1,9 @@
+/* istanbul ignore file */
 import dotenv from 'dotenv';
 
 if (process.env.NODE_ENV === 'test') {
   dotenv.config({
-    path: ''
+    path: '.test.env'
   });
 } else {
   dotenv.config();

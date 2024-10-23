@@ -1,0 +1,417 @@
+{
+  message: 'username tidak tersedia',
+  stack: 'InvariantError: username tidak tersedia\n' +
+    '    at UserRepositoryPostgres._callee$ (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:19:13)\n' +
+    '    at call (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:2:1)\n' +
+    '    at Generator.tryCatch (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:2:1)\n' +
+    '    at Generator._invoke [as next] (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  method: 'POST',
+  url: '/users',
+  body: {
+    username: 'medomeckz',
+    password: 'secret',
+    fullname: 'Albarra Zikrillah'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2024-10-23 22:06:34'
+}
+{
+  message: 'username tidak tersedia',
+  stack: 'InvariantError: username tidak tersedia\n' +
+    '    at UserRepositoryPostgres.verifyAvailableUsername (file:///Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Infrastructures/repository/UserRepositoryPostgres.js:19:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async PostUserUseCase.execute (file:///Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Applications/use_case/users/PostUserUseCase.js:14:5)\n' +
+    '    at async UsersHandler.postUserHandler (file:///Users/bei-zikri/Desktop/belajar/backend/express/starterpack/src/Interfaces/http/api/users/handler.js:12:25)',
+  method: 'POST',
+  url: '/users',
+  body: {
+    username: 'medomeckz1',
+    password: 'secret',
+    fullname: 'Albarra Zikrillah'
+  },
+  query: {},
+  params: {},
+  level: 'error',
+  timestamp: '2024-10-23 22:06:38'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55500',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:08:53'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': 'f9e8006f-460a-47ff-b9c5-bcfe7a78c0a5',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:08:56'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': '1d2f802b-a3b9-4f09-a789-db5b8fcc3318',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:00'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55521',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:04'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': 'bd59fcf6-4c58-4d7d-b2ab-87e7f151e76e',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:41'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55546',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:48'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55550',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:49'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': 'c8859d1b-7a0b-4c22-bbb0-033f20a97fcd',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:52'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': 'f5f74224-6881-44f9-b670-88043ccd7bd0',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:09:54'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': '77eeec66-574f-4f29-a1fa-51c26388513e',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:05'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55573',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:10'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': '7f03eccb-9ad9-4c78-9aeb-cf00f6188807',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:14'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55587',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:17'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55591',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:17'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.42.0',
+      accept: '*/*',
+      'postman-token': '349bead6-a9b5-4841-9f39-b868e2fb7464',
+      host: 'localhost:3002',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '95'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz1',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:10:38'
+}
+{
+  message: {
+    method: 'POST',
+    headers: {
+      host: '127.0.0.1:55611',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '75',
+      connection: 'close'
+    },
+    url: '/users',
+    request: {
+      username: 'medomeckz',
+      password: 'secret',
+      fullname: 'Albarra Zikrillah'
+    },
+    errors: 'username tidak tersedia',
+    statusCode: 400
+  },
+  level: 'error',
+  timestamp: '2024-10-23 22:11:12'
+}

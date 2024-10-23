@@ -6,7 +6,7 @@ const container = createContainer();
 // external
 import db from "../../models/index.js";
 import bcrypt from 'bcrypt';
-import { nanoid } from "nanoid";
+import { v4 as uuidv4 } from 'uuid';
 
 // service 
 import { UserRepositoryPostgres } from "./repository/UserRepositoryPostgres.js";
@@ -28,7 +28,7 @@ container.register([
           concrete: db,
         },
         {
-          concrete: nanoid
+          concrete: uuidv4
         }
       ]
     }

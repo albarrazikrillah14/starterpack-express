@@ -8,8 +8,8 @@
   "scripts": {
     "start": "node src/app.js",
     "start:dev": "nodemon src/app.js",
-    "test": "jest --setupFiles dotenv/config",
-    "test:watch": "jest --watchAll --coverage --setupFiles dotenv/config"
+    "test": "jest --setupFiles ./src/Commons/config",
+    "test:watch": "jest --watchAll --coverage --detectOpenHandles --setupFiles ./src/Commons/config"
   },
   "jest": {
     "transform": {
@@ -28,10 +28,10 @@
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
-    "nanoid": "^5.0.7",
     "pg": "^8.13.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.4",
+    "uuid": "^10.0.0",
     "winston": "^3.15.0",
     "winston-daily-rotate-file": "^5.0.0"
   },

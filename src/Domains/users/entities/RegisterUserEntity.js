@@ -13,9 +13,7 @@ export class RegisterUserEntity {
 
   _verifyPayload(payload) {
     const schema = Joi.object({
-      username: Joi.string().required().pattern(/^[\w]+$/).messages({
-        'string.base.pattern': 'username cannot contains restricted chacarter'
-      }),
+      username: Joi.string().required().pattern(/^[\w]+$/).message('username tidak dapat mengandung karakter yang dilarang'),
       password: Joi.string().required(),
       fullname: Joi.string().required(),
     });

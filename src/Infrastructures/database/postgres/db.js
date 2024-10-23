@@ -9,7 +9,6 @@ const db = new Sequelize({
   username: config.database.user,
   password: config.database.password,
   database: config.database.name,
-  logging: (...msg) => console.log(msg),
 });
 
 export default db;

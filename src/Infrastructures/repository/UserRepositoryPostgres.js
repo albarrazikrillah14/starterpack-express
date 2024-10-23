@@ -21,7 +21,7 @@ export class UserRepositoryPostgres extends UserRepository {
   }
 
   async addUser(registerUser) {
-    const id = `user-${this._idGenerator()}`;
+    const id = this._idGenerator();
     const result = await this._db.models.User.create({
       id,
       ...registerUser,
