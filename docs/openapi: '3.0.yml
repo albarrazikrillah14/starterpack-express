@@ -1,0 +1,87 @@
+openapi: "3.0.3"
+info:
+  title: API Spec
+  version: "1.0"
+  contact:
+    name: Albarra Zikrillah
+    email: albarrazikrillah1405@gmail.com
+servers:
+  - url: https://{environment}.remangokbabel.my.id
+    variables:
+      environment:
+        description: API environment
+        default: prod
+        enum:
+          - prod
+          - dev
+paths:
+  /:
+    get:
+      tags:
+      summary: init 
+      description:  init
+      responses:
+        200:
+          description: get succesfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message: 
+                    type: string
+                    example: Hello, from medomeckz!
+  /users:
+    post:
+      tags: 
+      - users 
+      summary: add new user 
+      description: add new user and add the data into database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: medomeckz 
+                password: 
+                  type: string
+                  example: secret 
+                fullname:
+                  type: string
+                  example: Albarra Zikrillah
+      responses:
+        201:
+          description: succesfully create new user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: 
+                    type: object
+                    properties:
+                      id:
+                        type: string 
+                        example: user-123
+                      username:
+                        type: string 
+                        example: medomeckz 
+                      fullname: 
+                        type: string
+                        example: Albarra Zikrillah
+        400:
+          description: username already exists
+          content:
+            application/json: 
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string 
+                    enum: 
+                      - username tidak tersedia
+                      - username terlalu panjang
+                    default: username tidak tersedia
